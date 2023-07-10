@@ -489,7 +489,8 @@
     <footer class="footer">
       <div class="container footer-flex">
         <div class="footer-left">
-          <a class="logo-footer link" href="./index.html">Web<span class="logo-color-white">Studio</span></a
+          <a class="logo-footer link" href="./index.html"
+            >Web<span class="logo-color-white">Studio</span></a
           >
           <p class="footer-text">
             Increase the flow of customers and sales for your business with
@@ -556,16 +557,16 @@
         <!-- footer subscribe -->
         <div class="footer-subscribe">
           <form>
-              <p class="footer-sub-text">Subscribe</p>
-            </label>
+            <p class="footer-sub-text">Subscribe</p>
             <div class="wrapper-subscribe">
               <label class="footer-lable" for="subscribe-input">
-              <input
-                class="footer-email-input"
-                id="subscribe-input"
-                type="email"
-                placeholder="E-mail"
-              /> </label>
+                <input
+                  class="footer-email-input"
+                  id="subscribe-input"
+                  type="email"
+                  placeholder="E-mail"
+                />
+              </label>
               <button type="submit" class="footer--btn-send">
                 Subscribe
                 <svg class="footer-send-icon" width="24px" height="24">
@@ -593,47 +594,47 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form>
           <div class="modal-item">
-            <label class="modal-label-desc" for="user-name"
-              >Name</label
-            >
+            <label class="modal-label-desc" for="user-name">Name</label>
             <div class="modal-form-fild">
-              <input class="modal-input" name="user-name" id="user-name" type="text" />
+              <input
+                class="modal-input"
+                name="user-name"
+                id="user-name"
+                type="text"
+              />
               <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#person"></use>
               </svg>
             </div>
           </div>
           <div class="modal-item">
-            <label class="modal-label-desc" for="phone"
-              >Phone</label
-            >
+            <label class="modal-label-desc" for="phone">Phone</label>
             <div class="modal-form-fild">
-              <input class="modal-input" id="phone" type="tel" />
+              <input class="modal-input" name="phone" id="phone" type="tel" />
               <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
             </div>
           </div>
           <div class="modal-item">
-            <label class="modal-label-desc" for="email">Email</label
-            >
+            <label class="modal-label-desc" for="email">Email</label>
             <div class="modal-form-fild">
-              <input class="modal-input" id="email" type="email" />
+              <input class="modal-input" name="email" id="email" type="email" />
               <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#email"></use>
               </svg>
             </div>
           </div>
           <div class="modal-item-check">
-          <label class="modal-label-desc" for="user-comment">Comment</label>
+            <label class="modal-label-desc" for="user-comment">Comment</label>
             <textarea
+              id="user-comment"
               name="user-comment"
               class="modal-input-comment"
               placeholder="Text input"
             ></textarea>
-        </div>
-
-          <label class="modal-form-agreement" for="user-privacy"></label>
+          </div>
+          <div class="modal-form-agreement-wrapper">
             <input
               class="modal-agreement-check visually-hidden"
               type="checkbox"
@@ -641,15 +642,18 @@
               id="user-privacy"
               value="true"
             />
-            <svg class="modal-form-custom-checkbox" width="16" height="16">
-              <use class="modal-form-icon-uncheck" href="./images/icons.svg#click-box"></use>
-              <use class="modal-form-icon-check" href="./images/icons.svg#click"></use>
-            </svg>
-            <span class="modal-agreement-desc"
-              >I accept the terms and conditions of the
-              <a class="modal-agreement-link" href="">Privacy Policy</a>
-            </span>
-          
+            <label class="modal-agreement-desc" for="user-privacy"> <span class="modal-form-check-box">
+              <svg class="modal-form-custom-checkbox" width="10" height="8">
+                <use
+                  class="modal-form-icon-check"
+                  href="./images/icons.svg#click-clean">
+              </use>
+              </svg>
+            </span> 
+              I accept the terms and conditions of the
+              <a class="modal-agreement-link" href="#">Privacy Policy</a>
+            </label>
+          </div>
           <button type="submit" class="modal-send">Send</button>
         </form>
       </div>
