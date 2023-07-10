@@ -648,16 +648,14 @@ padding-top: 24px; */
 }
 
 .footer-email-input {
-  width: 240px;
+  width: 264px;
   height: 40px;
   background-color: transparent;
   border-radius: 4px;
   border: 1px solid var(--white-background);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding-left: 16px;
-}
-
-.footer-email-input::placeholder {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   color: var(--white-background, #FFF);
   font-size: 12px;
   font-weight: 400;
@@ -665,9 +663,12 @@ padding-top: 24px; */
   letter-spacing: 0.48px;
 }
 
-.footer--btn-send {
+.footer-email-input::placeholder {
+  color: var(--white-background, #FFF);
+}
+
+.footer-btn-send {
   display: flex;
-  gap: 16px;
   justify-content: center;
   align-items: center;
 
@@ -675,9 +676,9 @@ padding-top: 24px; */
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
 
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   color: var(--white-background);
   background-color: var(--primary-brand, #4D5AE5);
@@ -689,6 +690,7 @@ padding-top: 24px; */
 .footer-send-icon {
   align-items: center;
   fill: var(--white-background);
+  margin-left: 16px;
 }
 
 
@@ -1037,7 +1039,7 @@ padding-top: 24px; */
 .modal-agreement-check{
 
 }
-.modal-agreement-check:checked + .modal-agreement-desc > modal-form-custom-checkbox{
+.modal-agreement-check:checked + .modal-agreement-desc > .modal-form-check-box{
   background-color: var(--pressed-state);
   border: none;
   fill: var(--light);
@@ -1053,7 +1055,7 @@ padding-top: 24px; */
   justify-content: center;
   fill: transparent;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-item-check {
   display: block;
