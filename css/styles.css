@@ -1037,7 +1037,7 @@ padding-top: 24px; */
 .modal-agreement-check{
 
 }
-modal-agreement-check:checked + modal-agreement-desc > modal-form-check-box {
+.modal-agreement-check:checked + .modal-agreement-desc > modal-form-custom-checkbox{
   background-color: var(--pressed-state);
   border: none;
   fill: var(--light);
