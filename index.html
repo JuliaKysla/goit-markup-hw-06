@@ -419,15 +419,18 @@
     </div>
     <!-- footer subscribe -->
     <div class="footer-subscribe">
-      <p class="footer-sub-text">Subscribe</p>
-      <div class="wrapper-subscribe">
-      <lable class="footer-lable">
-        <input class="footer-email-input" type="email" placeholder="E-mail">
+      <form>
+      <lable class="footer-lable" for="subscribe-input">
+      <span class="footer-sub-text">Subscribe</span>
       </lable>
+      <div class="wrapper-subscribe">
+      <input class="footer-email-input" id="subscribe-input" type="email" placeholder="E-mail">
       <button type="submit" class="footer--btn-send">Subscribe <svg class="footer-send-icon" width="24px" height="24">
         <use href="./images/icons.svg#send-sign"></use>
-      </svg></div>
-    </button>
+      </svg>
+      </button>
+    </div>
+    </form>
     </div>
     </div>
     </footer>
@@ -440,7 +443,7 @@
           </svg>
         </button>
 <p class="modal-title">Leave your contacts and we will call you back</p>
-<form action="">
+<form>
   <ul class="modal-list">
     <li class="modal-item">
       <label class="modal-lable" for="name"><span class="modal-label-desc">Name</span></label>
@@ -473,7 +476,7 @@
 </ul>
 <label class="modal-lable">
 <span class="modal-label-desc">Comment</span>
-      <textarea name="text-input" class="modal-input-comment" row="10" placeholder="Text input"></textarea>
+      <textarea name="text-input" class="modal-input-comment" placeholder="Text input"></textarea>
     </label>
       <label class="modal-form-agreement">
         <input class="modal-agreement-check" type="checkbox" name="user-agreement">
